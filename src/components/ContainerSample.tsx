@@ -1,5 +1,10 @@
+//propsの型を定義
+type ContainerProps = {
+  title: string
+  children: React.ReactNode
+}
 
-const Container = ( props: {title: string; children: React.ReactElement }) => {
+const Container = ( props: ContainerProps ) :JSX.Element => {
   const {title, children} = props
   return (
     <div style={{ background: 'red' }}>
@@ -11,7 +16,7 @@ const Container = ( props: {title: string; children: React.ReactElement }) => {
 
 const Parent = () => {
   return (
-    <Container title="Hello">
+    <Container title="ここはContainerSampleだよ">
       <p>ここの部分が背景色で囲まれます</p>
     </Container>
 

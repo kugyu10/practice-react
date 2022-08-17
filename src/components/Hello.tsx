@@ -3,7 +3,7 @@ const Hello = () => {
   const onClick = () => {
     alert('Hello!')
   }
-  const text = 'Hello, React'
+  const text = 'Hello, ここをクリックするとアラートがでるよ'
 
   return (
     <div onClick={onClick}>
